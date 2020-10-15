@@ -22,6 +22,7 @@ public:
     void Set(int x, int y);
     CRat operator+ (const CRat& d);
     CRat operator- (const CRat& p);
+    CRat& operator=(const CRat& b);
     void Get()const;
 };
 
