@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include <iostream>
+#include "Header.h"
 #define LENGTH 2
 using namespace std;
 class Vect {
@@ -18,10 +19,11 @@ public:
 		for (int i = 0; i < LENGTH; i++) {
 			a[i] = b[i];
 		}
-	};
-	Vect& operator=(const CComplVect& b);
-	Vect operator+(const CComplVect& b);
-  Vect operator-(const CComplVect& b);
-	Void get();
-	Void set();
+	 }
+	Vect& operator=(const Vect& b);
+	Vect operator+(const Vect& b);
+  Vect operator-(const Vect& b);
+	
+	void get();
+	void set();
 };
