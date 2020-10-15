@@ -22,7 +22,6 @@ public:
 	Vect& operator=(const CComplVect& b);
 	Vect operator+(const CComplVect& b);
   Vect operator-(const CComplVect& b);
-	Vect Conjugate();
 	Void get();
 	Void set();
 };
