@@ -1,5 +1,5 @@
 #include "header1.h"
-
+#include "Header.h"
 Vect& Vect :: operator= (const Vect& b) {
 	for (int i = 0; i < LENGTH; i++) {
 		this->a[i] = b.a[i];
@@ -7,7 +7,7 @@ Vect& Vect :: operator= (const Vect& b) {
 	return *this;                               
 };
 Vect Vect :: operator+(const Vect& b) {
-	CComplVect m;
+	Vect m;
 	for (int i = 0; i < LENGTH; i++) {
 		m.a[i] = a[i] + b.a[i];
 	}
@@ -20,7 +20,7 @@ Vect Vect :: operator-(const Vect& b) {
 	}
 	return m;
 };
-void  :: get() {
+void Vect :: get() {
 	CRat m;
 	cout << "(";
 	for (int i = 0; i < LENGTH - 1; i++) {
@@ -32,9 +32,10 @@ void  :: get() {
 	m.get();
 	cout << ")";
 };
-void  :: set() {
+void Vect:: set() {
 	for (int i = 0; i < LENGTH; i++) {
-		get(a[i]);
+		set(a[i].x,a[i].y);
 	}
-	return *a;                               
+	                             
 };
+
