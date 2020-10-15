@@ -20,3 +20,8 @@ void CRat::Get()const {
     cout << x;
     cout << y << endl;
 };
+CRat& CRat :: operator= (const CRat& b) {
+    this->x = b.x;
+    this->y = b.y;
+    return *this;
+}
