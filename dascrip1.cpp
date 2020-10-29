@@ -1,4 +1,7 @@
 #include "header1.h"
+#include <string>
+#include <iostream>
+#include <iostream>
 #include "Header.h"
 Vect& Vect :: operator= (const Vect& b) {
 	for (int i = 0; i < LENGTH; i++) {
@@ -25,25 +28,22 @@ void Vect :: get() {
 	cout << "(";
 	for (int i = 0; i < LENGTH - 1; i++) {
 		m = a[i];
-		cout << m.x;
-		cout << "/";
-                cout << m.y 
+		m.get();
 		cout << ",";
 	}
-	m = a[LENGTH - 1];
-	m.get();
+	
 	cout << ")";
 };
 void Vect:: set() {
-	crat a[LENGTH];
-	for (int i = 0; i < 2*LENGTH-1) {
-		 crat a[i]
-		 this->x = x;
-                 this->y = y;
-		 a[i].x = x;
-		 a[i].y = y;
-		  i+=2;
+	CRat a[LENGTH];
+	for (int i = 0; i < 2*LENGTH-1;i+=2) {
+		 CRat m;
+		 int x;
+		 int y;
+		 //this->x ;
+        // this->y ;
+		 m.set(x,y);
+		 a[i]=m;
 	}
 	                             
 };
-
