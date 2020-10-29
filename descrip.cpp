@@ -1,4 +1,8 @@
+#include <string>
+#include <iostream>
+#include <iostream>
 #include "Header.h"
+#include "header1.h"
 using namespace std;
 
 
@@ -6,10 +10,10 @@ void CRat::set(int x, int y) {
     this->x = x;
     this->y = y;
 }
-CRat CRat::operator+(const CRat& d) {
-    CRat p;
-    p.set(x * p.Y() + p.X() * y, y * p.Y());
-    return p;
+CRat CRat::operator+(const CRat& z) {
+    CRat w;
+    w.set(x * z.Y()+z.X() * y, y * z.Y());
+    return w;
 }
 CRat CRat::operator-(const CRat& p) {
     CRat d;
@@ -25,3 +29,4 @@ CRat& CRat :: operator= (const CRat& b) {
     this->y = b.y;
     return *this;
 }
+
