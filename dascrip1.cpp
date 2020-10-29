@@ -25,7 +25,9 @@ void Vect :: get() {
 	cout << "(";
 	for (int i = 0; i < LENGTH - 1; i++) {
 		m = a[i];
-		m.get();
+		cout << m.x;
+		cout << "/";
+                cout << m.y 
 		cout << ",";
 	}
 	m = a[LENGTH - 1];
@@ -33,8 +35,14 @@ void Vect :: get() {
 	cout << ")";
 };
 void Vect:: set() {
-	for (int i = 0; i < LENGTH; i++) {
-		set(a[i].x,a[i].y);
+	crat a[LENGTH];
+	for (int i = 0; i < 2*LENGTH-1) {
+		 crat a[i]
+		 this->x = x;
+                 this->y = y;
+		 a[i].x = x;
+		 a[i].y = y;
+		  i+=2;
 	}
 	                             
 };
