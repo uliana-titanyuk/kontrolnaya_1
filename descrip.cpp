@@ -2,21 +2,21 @@
 using namespace std;
 
 
-void CRat::Set(int x, int y) {
+void CRat::set(int x, int y) {
     this->x = x;
     this->y = y;
 }
 CRat CRat::operator+(const CRat& d) {
     CRat p;
-    p.Set(x * p.Y() + p.X() * y, y * p.Y());
+    p.set(x * p.Y() + p.X() * y, y * p.Y());
     return p;
 }
 CRat CRat::operator-(const CRat& p) {
     CRat d;
-    d.Set(x* p.Y() - p.X()*y, y * p.Y());
+    d.set(x* p.Y() - p.X()*y, y * p.Y());
     return d;
 }
-void CRat::Get()const {
+void CRat::get()const {
     cout << x;
     cout << y << endl;
 };
