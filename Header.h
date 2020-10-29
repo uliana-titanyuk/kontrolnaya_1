@@ -19,10 +19,10 @@ public:
         x = 0;
         y = 1;
     }
-    void Set(int x, int y);
+    void set(int x, int y);
     CRat operator+ (const CRat& d);
     CRat operator- (const CRat& p);
     CRat& operator=(const CRat& b);
-    void Get()const;
+    void get()const;
 };
 
