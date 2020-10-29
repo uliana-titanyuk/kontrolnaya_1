@@ -1,8 +1,8 @@
 #pragma once
+#include <string>
 #include <iostream>
-#include <math.h>
-#include <stdio.h>
-#include <fstream>
+#include <iostream>
+#include "Header.h"
 void AutoTest();
 class CRat;
 
