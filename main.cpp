@@ -1,5 +1,9 @@
+#include <fstream>  
+#include <string>
+#include <iostream>
+#include <iostream>
 #include "Header.h"
-
+#include "header1.h"
 int main() {
     std::ifstream inp("data.txt");
     if (!inp.is_open()) {
@@ -11,24 +15,24 @@ int main() {
     inp >> A;
     inp >> B;
     CRat p;
-    p.Set(A, B);
+    p.set(A, B);
     inp >> A;
     inp >> B;
     CRat d;
-    d.Set(A, B);
+    d.set(A, B);
     CRat c = p + d;
-    c.Get();
+    c.get();
 
     inp >> A;
     inp >> B;
     CRat e;
-    e.Set(A, B);
+    e.set(A, B);
     inp >> A;
     inp >> B;
     CRat f;
-    f.Set(A, B);
+    f.set(A, B);
     CRat g = e - f;
-    g.Get();
+    g.get();
 
    
 
