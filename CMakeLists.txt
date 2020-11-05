@@ -4,7 +4,7 @@ project(Source)
 
 #aux_source_directory(. SRC_LIST)
 
-set(VECTOR_SRC Source.cpp descrip.cpp descrip1.cpp AutoTest.cpp data.txt)
+set(VECTOR_SRC main.cpp descrip.cpp descrip1.cpp AutoTest.cpp data.txt)
 set(VECTOR_HDR Header.h Header1.h)
 
 #add_executable(${PROJECT_NAME} ${SRC_LIST})
