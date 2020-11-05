@@ -4,9 +4,9 @@ using namespace std;
 
 void AutoTest() {
 	CRat p;
-	p.Set(1, 2);
+	p.set(1, 2);
 	CRat d;
-	d.Set(1, 1);
+	d.set(1, 1);
 	CRat P = p + d;
 	if (P.X() == 3 && P.Y() == 2) {
 		cout << "AutoTest passed..." << endl;
