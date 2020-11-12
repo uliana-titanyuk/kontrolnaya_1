@@ -10,27 +10,23 @@ int main() {
         std::cout << "Error! Cannot open\n";
         return 1;
     }
-    int A;
-    int B;
-    inp >> A;
-    inp >> B;
+  
     Vect p;
-    p.set(A, B);
+    p.set();
     inp >> A;
     inp >> B;
     Vect d;
-    d.set(A, B);
+    d.set();
     Vect c = p + d;
     c.get();
 
-    inp >> A;
-    inp >> B;
+   
     Vect e;
-    e.set(A, B);
+    e.set();
     inp >> A;
     inp >> B;
     Vect f;
-    f.set(A, B);
+    f.set();
    Vect g = e - f;
     g.get();
 
