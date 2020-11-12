@@ -13,8 +13,7 @@ int main() {
   
     Vect p;
     p.set();
-    inp >> A;
-    inp >> B;
+    
     Vect d;
     d.set();
     Vect c = p + d;
@@ -23,8 +22,7 @@ int main() {
    
     Vect e;
     e.set();
-    inp >> A;
-    inp >> B;
+    
     Vect f;
     f.set();
    Vect g = e - f;
