@@ -14,24 +14,24 @@ int main() {
     int B;
     inp >> A;
     inp >> B;
-    CRat p;
+    Vect p;
     p.set(A, B);
     inp >> A;
     inp >> B;
-    CRat d;
+    Vect d;
     d.set(A, B);
-    CRat c = p + d;
+    Vect c = p + d;
     c.get();
 
     inp >> A;
     inp >> B;
-    CRat e;
+    Vect e;
     e.set(A, B);
     inp >> A;
     inp >> B;
-    CRat f;
+    Vect f;
     f.set(A, B);
-    CRat g = e - f;
+   Vect g = e - f;
     g.get();
 
    
